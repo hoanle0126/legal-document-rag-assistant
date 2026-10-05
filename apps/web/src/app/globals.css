@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FAF8F5] text-[#141A24] antialiased min-h-screen font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+  }
+
+  h1, h2, h3, .font-serif {
+    font-feature-settings: "liga", "dlig", "onum";
+  }
+}
+
+/* Custom Scrollbars in Archival Paper & Ink Tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8ADA0;
+}
+
+/* Statutory Passage Container (Replaces forbidden side-stripes with full-enclosure vellum ledger) */
+.statute-quote {
+  @apply relative p-4 rounded-xl bg-parchment-100 border border-hairline font-serif text-[13px] leading-relaxed text-[#141A24] shadow-subtle;
+}

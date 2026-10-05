@@ -1,0 +1,13 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+allowBuilds:
+  '@google/genai': true
+  '@prisma/client': true
+  '@prisma/engines': true
+  '@scarf/scarf': true
+  msgpackr-extract: true
+  prisma: true
+  protobufjs: true
+  unrs-resolver: true
+  bcrypt: true
